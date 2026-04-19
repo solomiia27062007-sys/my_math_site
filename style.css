@@ -1,0 +1,226 @@
+/* Стилі для всієї сторінки */
+body {
+    background-color: #FFF8DC;
+    font-family: Garamond, serif;
+    color: #000000;
+    margin: 0;
+    padding: 40px 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fefee8;
+    box-shadow: 0 0 20px rgb(106, 106, 101);
+    border-radius: 40px;
+}
+
+/* Стилі для головного заголовку*/
+h1 {
+    color: #784e09;
+
+}
+
+/* Стилі для підзаголовків */
+h2 {
+    color: rgb(155, 138, 71);
+}
+
+/* Стилі для посилання */
+a {
+    color: #784e09;
+}
+
+/* Стилі для абзаців*/
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Стилі для списків */
+ul, ol{
+    padding-left: 20px;
+    line-height: 1.8;
+}
+/* Навігація */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #3d3004;
+}
+/* Логотип */
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3d3004;
+}
+
+/* Список посилань */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+/* Посилання в меню */
+.nav-links a {
+    text-decoration: none;
+    color: #3d3004;
+    font-size: 15px;
+}
+
+/* Посилання при наведенні миші */
+.nav-links a:hover {
+    color: #95930e;
+}
+/* Hero блок */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #fbfad1, #faf8d6);
+    border-radius: 12px;
+}
+.hero h1 {
+    font-size: 40px;
+    color: #3d3004;
+    margin-bottom: 16px;
+}
+
+.hero-text {
+    font-size: 22px;
+    color: #784e09;
+    margin-bottom: 32px;
+}
+/* Кнопка */
+.btn {
+    display: inline-block;
+    background-color: #784e09;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Кнопка при наведенні */
+.btn:hover {
+    background-color: #b84f1e;
+}
+/* Сітка карток */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: stretch;
+    background-color: #fefee8;
+    padding: 20px;
+    border-radius: 12px;
+}
+/* Кожна картка */
+.card {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 200px;
+    background-color: #fbfad1;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Іконка в картці */
+.card-icon {
+    font-size: 10px;
+    margin-bottom: 12px;
+}
+
+/* Заголовок картки */
+.card h3 {
+    color: #784e09;
+    margin-bottom: 8px;
+}
+
+/* Текст картки */
+.card p {
+    color: #666666;
+    font-size: 18px;
+}
+
+/* Картка при наведенні */
+.card:hover {
+    background-color: rgb(245, 236, 158);
+}
+/* Футер */
+.footer {
+    margin-top: 60px;
+    padding: 24px 0;
+    border-top: 2px solid #f5f0ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666666;
+    font-size: 14px;
+}
+
+/* Посилання у футері */
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.footer-links a:hover {
+    color: #95930e;
+}
+@media (max-width: 600px) {
+
+    /* Зменшуємо відступи контейнера */
+    .container {
+        padding: 16px;
+        border-radius: 20px;
+    }
+
+    /* Навігація — логотип і меню один під одним */
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    /* Посилання в меню ближче одне до одного */
+    .nav-links {
+        gap: 16px;
+    }
+
+    /* Hero заголовок менший */
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero {
+        padding: 40px 16px;
+    }
+
+    /* Картки в один стовпець */
+    .card {
+        flex: 1 1 100%;
+    }
+
+    /* Футер один під одним */
+    .footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
